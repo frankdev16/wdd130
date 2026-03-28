@@ -1,6 +1,8 @@
 :root {
-    --primary-color: #055a05;
+    /* --primary-color: #055a05; */
+    --primary-color: #e72121;
     --secondary-color: #f4a261;
+    --whiter-color: #eeeeee;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", Serif;
@@ -9,7 +11,9 @@
 
 header {
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    /* color: var(--accent2-color); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 * {
@@ -20,7 +24,7 @@ header {
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color)
+    color: var(--accent1-color);
 }
 
 header,
@@ -34,6 +38,7 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
 }
 
 nav,
@@ -66,7 +71,7 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--whiter-color);
     text-shadow: 1px 1px 2px var(--secondary-color);
 }
 
@@ -80,4 +85,72 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: var(--whiter-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    padding-left: 20px;
+}
+
+.history-class {
+    display: flex;
+    padding: 0;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia img {
+    width: 40px;
+}
+
+.figure-class {
+    max-width: 840px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.figure-class figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figure-class img {
+    width: 70%;
+    height: 60%;
+    margin: 20px 0;
+
+}
+
+.figure-class figcaption {
+    width: 60%;
+    font-size: 13px;
+    text-align: center;
+
 }
