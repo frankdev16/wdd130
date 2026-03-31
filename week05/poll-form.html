@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/pool-form.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>WDD130 | HTML Form - User pool</h1>
+    </header>
+
+    <main>
+        <form action="">
+            <fieldset class="contact_info">
+                <legend>contact information</legend>
+                <div class="formitem column2">
+                    <label for="fullname">fullname:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-item column2">
+                    <label for="useremail">email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+            </fieldset>
+            <fieldset class="questions">
+                <legend>questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">whats your favourite browser</label>
+                    <select name="browser" id="browser">
+                        <option value="1">chrome</option>
+                        <option value="2">edge</option>
+                        <option value="3">firefox</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">do you have a
+                        pet?</label>
+                    <input type="checkbox" name="pet" id="pet">
+                </div>
+                <div class="form-item">
+                    <label for="feedback">list places you have lived</label>
+                    <textarea name="feedback" id="feedback" rows="5"
+                      placeholder="lagos, aba, kaduna, abuja, port harcourt"></textarea>
+                </div>
+            </fieldset>
+            <button type="submit">submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Franklin Anyagogu, Aba, Nigeria</p>
+    </footer>
+
+</body>
+
+</html>
