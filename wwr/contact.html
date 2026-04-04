@@ -41,9 +41,9 @@
               referrerpolicy="no-referrer-when-downgrade"></iframe>
             <section class="form-container">
                 <form action="">
-                    <fieldset class="contact_info">
+                    <fieldset class="contact-details">
                         <legend>contact information</legend>
-                        <div class="formitem column2">
+                        <div class="form-item column2">
                             <label for="fullname">fullname:</label>
                             <input type="text" id="fullname" name="fullname" required>
                         </div>
@@ -75,15 +75,33 @@
                         </div>
 
                     </fieldset>
-                    <button type="submit">submit</button>
+                    <fieldset class="experience">
+                        <legend>What is your rafting experience?</legend>
+                        <div class="form-item radio-item">
+                            <input type="radio" id="beginner" name="experience" value="beginner"
+                              required>
+                            <label for="beginner">Beginner</label>
+                        </div>
+                        <div class="form-item radio-item">
+                            <input type="radio" id="intermediate" name="experience"
+                              value="intermediate">
+                            <label for="intermediate">Intermediate</label>
+                        </div>
+                        <div class="form-item radio-item">
+                            <input type="radio" id="advanced" name="experience" value="advanced">
+                            <label for="advanced">Advanced</label>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit">Send Message</button>
                 </form>
             </section>
         </div>
-        <section>
+        <section class="employee-content">
             <h1>We are here to serve</h1>
             <div class="figure-class">
                 <figure>
-                    <img src="images/cpn exam.jpg" alt="employee image" class="emp-img">
+                    <img src="images/cpn-exam.jpg" alt="employee image" class="emp-img">
                     <figcaption>Employee profile</figcaption>
                 </figure>
                 <figure>

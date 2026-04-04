@@ -16,7 +16,7 @@
 
 header {
     background-color: var(--primary-color);
-    /* color: var(--accent2-color); */
+    color: var(--whiter-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -170,17 +170,6 @@ footer {
 
 /* additional styling for contact page  */
 
-form {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: grid;
-    padding: 20px;
-    background-color: #eee;
-}
-
 fieldset {
     display: grid;
     gap: 10px;
@@ -203,7 +192,7 @@ input,
 select,
 textarea {
     padding: 0 5px;
-    font-size: larger;
+    font-size: large;
 }
 
 input[type="checkbox"] {
@@ -215,11 +204,29 @@ input[type="checkbox"] {
     gap: 5px;
 }
 
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    background-color: white;
+    cursor: pointer;
+    /* margin: 0; */
+}
+
+/* input[type="browser"] {
+    display: grid;
+    grid-template-columns: 1fr auto;
+} */
+
 button {
     background-color: rgb(50, 50, 117);
-    margin: 10px auto;
+    margin: 0 auto;
     width: 100px;
-    height: 20px;
+    height: 30px;
     color: #eee;
     border-radius: 10px;
 }
@@ -257,7 +264,7 @@ textarea {
     /* height: auto; */
     max-width: 840px;
     margin: 0 auto;
-    padding: 30px;
+    /* padding: 30px; */
 }
 
 .contact-content iframe {
@@ -290,6 +297,6 @@ form {
     grid-column: 1/3;
 }
 
-.employee-content h1 {
-    margin-bottom: 20px;
+.employee-content {
+    margin-top: 100px;
 }
