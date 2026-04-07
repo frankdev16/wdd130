@@ -386,9 +386,9 @@ tfoot tr {
     font-weight: 700;
 }
 
-thead tr:hover,
+tfoot a:hover,
 tfoot tr:hover {
-    background-color: brown;
+    background-color: rgb(44, 23, 23);
     color: aqua;
 }
 
@@ -420,4 +420,5 @@ tfoot a {
     text-decoration: none;
     color: var(--whiter-color);
     margin-left: 30px;
+    font-size: 1.3rem;
 }
